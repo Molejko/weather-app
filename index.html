@@ -12,74 +12,72 @@
 </head>
 
 <body>
-    <img src="img_background.jpg" alt="Obrazek w tle, niebo" class="img-bcg">
+   
+   <header>
+        <p class="logo-text">weather app</p>
+        <img src="img_background.jpg" alt="Obrazek w tle, niebo" class="img-bcg">
+    </header>
 
-    <div class="top-container">
-
-        <header>
-            <p class="logo-text">weather app</p>
-        </header>
-
-        <div class="search-box">
-            <input type="text" placeholder="Wpisz nazwę miejscowości"> 
-            <i class="fas fa-search"></i>
-        </div>
-    </div>
-
-    <div class="city-container">
+    <section class="search-box">
+        <input type="text" placeholder="Wpisz nazwę miejscowości"> 
+        <i class="fas fa-search"></i>
+    </section>
+   
+    <section class="city-info">
             <h1 class="city-name">Rzeszów</h1>
-            <p class="date-info">Piątek, 29-01-2021</p>
-    </div>
+            <p class="city-date">Piątek, 29-01-2021</p>
+    </section>
 
-    <div class="weather-box">
+    <section class="weather-box">
 
         <div class="left-box">
             <i class="fas fa-snowflake"></i>
-            <div class="weather-info">
+            <div class="temp-info">
                 <p class="temp">25°C</p>
-                <p class="info">Snowing</p>
+                <p class="temp-desc">Snowing</p>
             </div>
         </div>
 
         <div class="right-box">
 
-            <div class="info-box">
+            <div class="weather-component">
                 <h2 class="title">temperatura</h2>
-                <!-- <p class="temp">25</p> -->
+                <p class="description">22 hPa</p>
             </div>
 
-            <div class="info-box">
+            <div class="weather-component">
                 <h2 class="title">wilgotność</h2>
-                <p class="temp"></p>
+                <p class="description">22</p>
             </div>
 
-            <div class="info-box">
+            <div class="weather-component">
                 <h2 class="title">Ciśnienie</h2>
-                <p class="temp"></p>
+                <p class="description">22</p>
             </div>
 
-            <div class="info-box">
+            <div class="weather-component">
                 <h2 class="title">Ciśnienie</h2>
-                <p class="temp"></p>
+                <p class="description">22</p>
             </div>
 
-            <div class="info-box">
+            <div class="weather-component">
                 <h2 class="title">Ciśnienie</h2>
-                <p class="temp"></p>
+                <p class="description">22</p>
             </div>
 
-            <div class="info-box">
+            <div class="weather-component">
                 <h2 class="title">Ciśnienie</h2>
-                <p class="temp"></p>
+                <p class="description">22</p>
             </div>
 
         </div>
-    </div>
+    </section>
+
     <footer>
         <p>Made with <i class="far fa-heart"></i></p>
         <p><i class="far fa-copyright"></i> MOlejko</p>
     </footer>
    
-    
+    <script src="main.js"></script>
 </body>
 </html>
