@@ -21,53 +21,44 @@
     <section class="search-box">
         <input type="text" placeholder="Wpisz nazwę miejscowości"> 
         <i class="fas fa-search"></i>
+        <p class="warning"></p>
     </section>
    
     <section class="city-info">
-            <h1 class="city-name">Rzeszów</h1>
+            <h1 class="city-name"> </h1>
             <p class="city-date">Piątek, 29-01-2021</p>
     </section>
 
     <section class="weather-box">
 
         <div class="left-box">
-            <i class="fas fa-snowflake"></i>
-            <div class="temp-info">
-                <p class="temp">25°C</p>
-                <p class="temp-desc">Snowing</p>
+            <p class = "icon"> </p>
+            <div class="weather-info">
+                <p class="temp"></p>
+                <p class="weather-desc"></p>
             </div>
         </div>
 
         <div class="right-box">
 
             <div class="weather-component">
-                <h2 class="title">temperatura</h2>
-                <p class="description">22 hPa</p>
+                <h2 class="title">temperatura odczuwalna</h2>
+                <p class="description temp-feel"> </p>
             </div>
 
             <div class="weather-component">
                 <h2 class="title">wilgotność</h2>
-                <p class="description">22</p>
+                <p class="description humidity"> </p>
             </div>
 
             <div class="weather-component">
                 <h2 class="title">Ciśnienie</h2>
-                <p class="description">22</p>
+                <p class="description pressure"> </p>
             </div>
 
             <div class="weather-component">
-                <h2 class="title">Ciśnienie</h2>
-                <p class="description">22</p>
-            </div>
-
-            <div class="weather-component">
-                <h2 class="title">Ciśnienie</h2>
-                <p class="description">22</p>
-            </div>
-
-            <div class="weather-component">
-                <h2 class="title">Ciśnienie</h2>
-                <p class="description">22</p>
+                <h2 class="title">Prędkość wiatru</h2>
+                <p class="description wind-speed"> </p>
             </div>
 
         </div>
@@ -78,6 +69,7 @@
         <p><i class="far fa-copyright"></i> MOlejko</p>
     </footer>
    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
