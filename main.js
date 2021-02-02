@@ -19,7 +19,7 @@ const units = '&units=metric';
 const defaultCity = 'Husów'
 let city;
 let apiUrl;
-// const apiUrl = api + city + apiKey + units;
+
 
 const checkInput = () => {
     if(input.value == '') {
