@@ -10,6 +10,23 @@ const humidity = document.querySelector('.humidity')
 const pressure = document.querySelector('.pressure');
 const windSpeed = document.querySelector('.wind-speed');
 const icon = document.querySelector('.icon');
+const cityDate = document.querySelector('.city-date');
+
+
+
+const setDate = () =>{
+    const todayDate = new Date();
+    const daysName = ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"];
+    const dayName = daysName[todayDate.getDay()];
+    let day = todayDate.getDate();
+    let month = todayDate.getMonth()+1;
+    const year = todayDate.getFullYear();
+    if(day < 10) day = '0' + day;
+    if(month < 10) month = '0' + month;
+
+    cityDate.textContent = `${dayName}, ${day}.${month}.${year}`;
+}
+
 
 
 //API
@@ -25,13 +42,13 @@ const checkInput = () => {
     if(input.value == '') {
         warning.textContent = "Podaj nazwę miejsowości";
         input.value = '';
-        cityName.textContent = '?';
-        temp.textContent = '?';
-        tempFeel.textContent = '?';
-        humidity.textContent = '?';
-        pressure.textContent = '?';
-        windSpeed.textContent = '?';
-        weatherDesc.textContent = '?';
+        cityName.textContent = '';
+        temp.textContent = 'no date';
+        tempFeel.textContent = 'no date';
+        humidity.textContent = 'no date';
+        pressure.textContent = 'no date';
+        windSpeed.textContent = 'no date';
+        weatherDesc.textContent = '';
         icon.innerHTML = '<i class="fas fa-question-circle"></i>';
     }
     else getWeather();
@@ -108,19 +125,19 @@ const getWeather = () => {
         // console.log('lipa');
         warning.textContent = "Wpisz poprawną nazwę miejscowości";
         input.value = '';
-        cityName.textContent = '?';
-        temp.textContent = '?';
-        tempFeel.textContent = '?';
-        humidity.textContent = '?';
-        pressure.textContent = '?';
-        windSpeed.textContent = '?';
-        weatherDesc.textContent = '?';
+        cityName.textContent = '';
+        temp.textContent = 'no date';
+        tempFeel.textContent = 'no date';
+        humidity.textContent = 'no date';
+        pressure.textContent = 'no date';
+        windSpeed.textContent = 'no date';
+        weatherDesc.textContent = '';
         icon.innerHTML = '<i class="fas fa-question-circle"></i>';
 
     })
 
 }
-
+    setDate();
     getWeather();
    searchBtn.addEventListener('click', checkInput);
    input.addEventListener('keydown', e => {
